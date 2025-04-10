@@ -11,7 +11,7 @@ This notebook simplifies the routing step to help you intuitively understand how
 - Prompt routing based on semantic similarity instead of a learned gate
 - How sentence embeddings and cosine similarity can approximate routing decisions
 
-This is **not a production MoE system**, but a lightweight and interpretable way to **grasp the routing logic** that underpins MoE-based LLMs.
+This is **not a production MoE system**, but a lightweight and interpretable way to **grasp the routing logic** that underpins MoE-based LLM systems like Deepseek-R1 or Mistral 8x7B
 
 ## Requirements
 
