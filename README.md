@@ -1,20 +1,19 @@
-# 🧠 Simplified Mixture of Experts with Prompt Routing
+# 🧠 Mixture of Experts (MoE) in LLM Inference – A Simplified Introduction
 
-This notebook demonstrates a minimal implementation of a **Mixture of Experts (MoE)** architecture using pretrained language models and semantic similarity–based routing.
+This notebook introduces the core idea behind the **Mixture of Experts (MoE)** approach used in **large language model (LLM) inference**, through a simplified routing mechanism.
 
-The goal is to provide a clear, educational example of how prompts can be routed to the most relevant "expert" model based on the meaning of the prompt.
+In real-world MoE systems, a gating network dynamically selects a subset of experts based on the input. However, actual implementations are often complex and opaque.  
+This notebook simplifies the routing step to help you intuitively understand how expert selection works.
 
-## 📌 Overview
+## What This Notebook Demonstrates
 
-- Define a set of expert models, each specialized for a different task (e.g., code generation, classification, question answering).
-- Use sentence embeddings to represent both the user prompt and expert capabilities.
-- Route prompts to the most relevant expert using cosine similarity.
+- A minimal MoE setup using multiple expert models
+- Prompt routing based on semantic similarity instead of a learned gate
+- How sentence embeddings and cosine similarity can approximate routing decisions
 
-This is a simplified version of the expert routing logic often used in MoE systems, made beginner-friendly and easy to experiment with.
+This is **not a production MoE system**, but a lightweight and interpretable way to **grasp the routing logic** that underpins MoE-based LLMs.
 
-## 🧰 Requirements
-
-Install dependencies using:
+## Requirements
 
 ```bash
 pip install transformers sentence-transformers
