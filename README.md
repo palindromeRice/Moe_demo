@@ -49,15 +49,19 @@ flowchart LR
   needs tuning for new prompts and experts.
 - This is a teaching demo, not a benchmark; no routing accuracy is measured.
 
-## Citation
+## License
 
-If you use this work, please cite:
+Code and results are released under the [Apache License 2.0](LICENSE). See [NOTICE](NOTICE).
+
+## Citation
 
 ```bibtex
 @misc{chawla2025moerouter,
-  author       = {Chawla, Naman},
+  author       = {Naman Chawla},
   title        = {Mixture-of-Experts Prompt Router},
   year         = {2025},
   howpublished = {\url{https://github.com/palindromeRice/Moe_demo}}
 }
 ```
+
+Machine-readable citation metadata is in [CITATION.cff](CITATION.cff).
